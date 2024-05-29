@@ -24,7 +24,7 @@ public class Usuaria implements Serializable {
 	
 	private Integer idade;
 	
-	private Integer celular;
+	private String celular;
 	
 	private String cpf;
 	
@@ -40,7 +40,8 @@ public class Usuaria implements Serializable {
 		
 	}
 
-	public Usuaria(String id, String nome, String sobrenome, Integer idade, Integer celular, String cpf,
+	
+	public Usuaria(String id, String nome, String sobrenome, Integer idade, String celular, String cpf,
 			LocalDate nascimento, String escolaridade, String cidade, String email) {
 		super();
 		this.id = id;
@@ -54,6 +55,11 @@ public class Usuaria implements Serializable {
 		this.cidade = cidade;
 		this.email = email;
 	}
+
+
+
+
+
 	public String getId() {
 		return id;
 	}
@@ -86,13 +92,16 @@ public class Usuaria implements Serializable {
 		this.idade = idade;
 	}
 
-	public Integer getCelular() {
+
+	public String getCelular() {
 		return celular;
 	}
 
-	public void setCelular(Integer celular) {
+
+	public void setCelular(String celular) {
 		this.celular = celular;
 	}
+
 
 	public String getCpf() {
 		return cpf;
